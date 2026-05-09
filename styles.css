@@ -390,6 +390,78 @@ footer a {
 }
 footer a:hover { color: var(--hi); border-color: var(--hi); }
 
+/* ─── Support page ─── */
+.support-intro {
+  padding: 0 0 32px;
+  max-width: 800px;
+}
+.intro-lede {
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0;
+  font-weight: 400;
+}
+.support-section {
+  padding: 24px 0 80px;
+}
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.support-card {
+  border-top: 2px solid var(--ink);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.support-card .num {
+  font-family: var(--font-jp);
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--hi);
+  margin-bottom: 20px;
+  letter-spacing: -0.04em;
+}
+.support-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 0 0 12px;
+}
+.support-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 24px;
+  flex: 1;
+}
+.support-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 4px;
+  align-self: flex-start;
+  letter-spacing: -0.005em;
+  transition: color 0.18s ease, border-color 0.18s ease, gap 0.18s ease;
+}
+.support-cta::after {
+  content: "→";
+  display: inline-block;
+  transition: transform 0.18s ease;
+}
+.support-cta:hover {
+  color: var(--hi);
+  border-color: var(--hi);
+}
+.support-cta:hover::after { transform: translateX(4px); }
+
 /* ─── Privacy page ─── */
 .privacy-hero {
   padding: 100px 0 56px;
@@ -487,4 +559,9 @@ footer a:hover { color: var(--hi); border-color: var(--hi); }
     padding: 28px 0;
   }
   .privacy-content .privacy-num { font-size: 24px; }
+
+  .support-intro { padding: 0 0 24px; }
+  .intro-lede { font-size: 19px; }
+  .support-grid { grid-template-columns: 1fr; gap: 36px; }
+  .support-card .num { font-size: 44px; }
 }
