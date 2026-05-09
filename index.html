@@ -9,8 +9,12 @@
   <meta property="og:description" content="89 термінів, два режими тестів, без облікового запису, без реклами, повністю офлайн.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/icon.png">
+  <meta name="theme-color" content="#F5EFE6">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,72 +34,108 @@
 
 <main>
 
-  <section class="container hero">
-    <div class="hero-text">
-      <h1>Hajime</h1>
-      <p class="tagline">Словник японської термінології Кьокушин-карате українською мовою — для учнів, які хочуть нарешті зрозуміти, що каже сенсей.</p>
-      <p class="meta">📱 iOS 17+ &nbsp;·&nbsp; Скоро в App Store</p>
-    </div>
-    <div class="hero-image">
-      <img src="images/dictionary.png" alt="Список термінів Hajime з фільтрами категорій">
-    </div>
-  </section>
-
-  <section class="container block">
-    <h2>Що всередині</h2>
-    <div class="features">
-      <div class="feature">
-        <div class="icon">📚</div>
-        <h3>89 термінів у 11 категоріях</h3>
-        <p>Загальне, рахунок, лічильники, напрямки, рівні, стійки, удари руками, удари ногами, блоки, команди, ката.</p>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="jp">極真</span> Кьокушин-карате</span>
+        <h1 class="hero-title">Hajime</h1>
+        <div class="hero-jp">始め</div>
+        <p class="hero-lede">Кишеньковий словник японської термінології Кьокушин-карате українською мовою — для учнів, які хочуть нарешті розуміти, що каже сенсей.</p>
+        <p class="hero-cta">
+          <strong>iOS 17+</strong>
+          <span class="sep"></span>
+          <span>Скоро в App Store</span>
+        </p>
       </div>
-      <div class="feature">
-        <div class="icon">🥋</div>
-        <h3>Два режими тестів</h3>
-        <p>«Переклад» — впізнавання значення термінів. «Комбінації» — слухаєте команду сенсея зі стійки, техніки, рівня та лічильника й обираєте її переклад.</p>
-      </div>
-      <div class="feature">
-        <div class="icon">🌐</div>
-        <h3>Повністю офлайн</h3>
-        <p>Без облікового запису, без реклами, без збору даних. Усі терміни вже всередині застосунку. Назавжди безкоштовно.</p>
+      <div class="hero-image">
+        <img src="images/dictionary.png" alt="Список термінів Hajime з фільтрами категорій">
       </div>
     </div>
   </section>
 
-  <section class="container block">
-    <h2>Чим відрізняється</h2>
-    <p class="lead">Більшість словників плутають переклад і транслітерацію. У Hajime «Сейкен-цукі» — це не просто «seiken-tsuki» кирилицею, а <strong>прямий удар кулаком</strong>. Тести перевіряють саме розуміння, а не вміння повторити склади.</p>
-    <p class="lead">Кожен термін має кандзі, ромаджі, переклад значення, транслітерацію вимови та докладний опис українською — з культурним і етимологічним контекстом.</p>
-  </section>
-
-  <section class="container block">
-    <h2>Скріншоти</h2>
-    <div class="screenshots">
-      <img src="images/dictionary.png" alt="Словник термінів з фільтрами категорій">
-      <img src="images/term-detail.png" alt="Детальна сторінка терміна kiba-dachi із кандзі, перекладом і описом">
-      <img src="images/quiz-setup.png" alt="Налаштування тесту: вибір типу, категорії, напрямку та кількості питань">
-      <img src="images/quiz-question.png" alt="Питання комбінованого тесту з чотирма варіантами відповідей">
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">一</div>
+        <h2 class="section-title">У словнику</h2>
+      </div>
+      <div class="section-content">
+        <div class="features">
+          <div class="feature">
+            <span class="feature-stat">89</span>
+            <h3>Термінів</h3>
+            <p>Загальне, рахунок, лічильники, напрямки, рівні, стійки, удари руками, удари ногами, блоки, команди, ката — все, що чути на татамі.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-stat">11</span>
+            <h3>Категорій</h3>
+            <p>Кожен термін має кандзі, ромаджі, переклад значення, транслітерацію вимови та докладний опис українською з культурним контекстом.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-stat">2</span>
+            <h3>Режими тестів</h3>
+            <p>«Переклад» — впізнавання значення термінів. «Комбінації» — слухаєте команду сенсея зі стійки, техніки, рівня й лічильника та обираєте її переклад.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="container block">
-    <h2>Для кого</h2>
-    <div class="audience">
-      <div class="audience-item">
-        <strong>Учням 10–1 кю</strong>
-        <span>Підготуватися до атестацій і не плутатися в командах сенсея під час кіхону.</span>
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">二</div>
+        <h2 class="section-title">Чим відрізняється</h2>
       </div>
-      <div class="audience-item">
-        <strong>Сенпаям</strong>
-        <span>Освіжити термінологію перед екзаменом на пояс і допомогти молодшим товаришам.</span>
+      <div class="section-content lead-text">
+        <p>Більшість словників плутають переклад і транслітерацію. У Hajime <strong>«Сейкен-цукі»</strong> — це не просто «seiken-tsuki» кирилицею, а <em>прямий удар кулаком</em>. Тести перевіряють саме розуміння, а не вміння повторити склади.</p>
+        <p>Без облікового запису, без реклами, без аналітики, без збору даних. Усі терміни вже всередині застосунку. Назавжди безкоштовно.</p>
       </div>
-      <div class="audience-item">
-        <strong>Сенсеям</strong>
-        <span>Швидкий довідник для пояснень новачкам — кандзі, етимологія, контекст у одному застосунку.</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">三</div>
+        <h2 class="section-title">Скріншоти</h2>
       </div>
-      <div class="audience-item">
-        <strong>Майбутнім каратистам</strong>
-        <span>Зорієнтуватися в основах ще до першого тренування й уникнути перших несподіванок.</span>
+      <div class="section-content">
+        <div class="screenshots">
+          <img src="images/dictionary.png" alt="Словник термінів з фільтрами категорій">
+          <img src="images/term-detail.png" alt="Детальна сторінка терміна kiba-dachi">
+          <img src="images/quiz-setup.png" alt="Налаштування тесту з типом, категорією та напрямком">
+          <img src="images/quiz-question.png" alt="Питання комбінованого тесту з варіантами відповідей">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-num">四</div>
+        <h2 class="section-title">Для кого</h2>
+      </div>
+      <div class="section-content">
+        <div class="audience">
+          <div class="audience-item">
+            <strong>Учням 10–1 кю</strong>
+            <span>Підготуватися до атестацій і не плутатися в командах сенсея під час кіхону.</span>
+          </div>
+          <div class="audience-item">
+            <strong>Сенпаям</strong>
+            <span>Освіжити термінологію перед екзаменом на пояс і допомогти молодшим товаришам.</span>
+          </div>
+          <div class="audience-item">
+            <strong>Сенсеям</strong>
+            <span>Швидкий довідник для пояснень новачкам — кандзі, етимологія, контекст у одному застосунку.</span>
+          </div>
+          <div class="audience-item">
+            <strong>Майбутнім каратистам</strong>
+            <span>Зорієнтуватися в основах ще до першого тренування й уникнути перших несподіванок.</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
