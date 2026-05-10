@@ -208,6 +208,30 @@ nav a:hover { color: var(--hi); border: 0; }
     0 80px 120px -50px rgba(12, 12, 12, 0.4),
     0 24px 40px -12px rgba(12, 12, 12, 0.16);
 }
+
+/* ─── Demo section (autoplay video below the hero) ─── */
+.demo {
+  padding: 24px 0 80px;
+}
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.demo .eyebrow {
+  margin-bottom: 0;
+}
+.demo-video {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  border-radius: 44px;
+  background: var(--bg-paper);
+  box-shadow:
+    0 80px 120px -50px rgba(12, 12, 12, 0.4),
+    0 24px 40px -12px rgba(12, 12, 12, 0.16);
+}
 .hero-image::after {
   content: "";
   position: absolute;
@@ -526,6 +550,10 @@ footer a:hover { color: var(--hi); border-color: var(--hi); }
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .hero-image { max-width: 280px; margin: 0 auto; justify-self: center; }
   .hero-lede { font-size: 18px; }
+
+  .demo { padding: 16px 0 48px; }
+  .demo-container { gap: 24px; }
+  .demo-video { max-width: 260px; border-radius: 36px; }
 
   section.section { padding: 64px 0; }
   .section-header { grid-template-columns: 1fr; gap: 12px; margin-bottom: 36px; }
