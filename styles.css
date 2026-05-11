@@ -180,21 +180,58 @@ nav a:hover { color: var(--hi); border: 0; }
   max-width: 540px;
 }
 .hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.appstore-btn {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  font-size: 13px;
+  gap: 12px;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-bottom: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.appstore-btn:hover {
+  color: #fff;
+  border-bottom: none;
+  opacity: 0.82;
+  transform: translateY(-1px);
+}
+.appstore-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+.appstore-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.appstore-small {
+  font-size: 11px;
   font-weight: 500;
-  color: var(--ink-soft);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
   text-transform: uppercase;
 }
-.hero-cta strong { color: var(--ink); font-weight: 700; }
-.hero-cta .sep {
-  display: inline-block;
-  width: 24px;
-  height: 1px;
-  background: var(--ink-muted);
+.appstore-large {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.hero-cta-meta {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 .hero-image {
   width: 100%;
