@@ -1,0 +1,10 @@
+node_modules/
+test-results/
+package.json
+package-lock.json
+.wrangler/
+.gitignore
+.github/
+.claude/
+.DS_Store
+**/.DS_Store
