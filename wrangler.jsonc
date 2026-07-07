@@ -2,7 +2,14 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hajime-website",
   "compatibility_date": "2026-05-11",
+  "main": "worker/index.js",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    // Create with:  npx wrangler kv namespace create SANTA
+    // then paste the returned id below (see SECRET-SANTA.md).
+    { "binding": "SANTA", "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID" }
+  ]
 }

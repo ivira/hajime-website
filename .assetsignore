@@ -3,3 +3,5 @@
 .gitignore
 .assetsignore
 wrangler.jsonc
+worker
+SECRET-SANTA.md
