@@ -8,8 +8,6 @@
     "binding": "ASSETS"
   },
   "kv_namespaces": [
-    // Create with:  npx wrangler kv namespace create SANTA
-    // then paste the returned id below (see SECRET-SANTA.md).
-    { "binding": "SANTA", "id": "REPLACE_WITH_YOUR_KV_NAMESPACE_ID" }
+    { "binding": "SANTA", "id": "6272a708ec02456cbfb98a9d93c2f25c" }
   ]
 }
