@@ -100,6 +100,16 @@ nav a {
   text-transform: uppercase;
 }
 nav a:hover { color: var(--hi); border: 0; }
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid var(--line-soft) !important;
+  border-radius: 999px;
+  color: var(--ink) !important;
+  font-weight: 600;
+}
+.lang-switch:hover { color: var(--hi) !important; border-color: var(--hi) !important; }
 
 /* ─── Hero ─── */
 .hero {
