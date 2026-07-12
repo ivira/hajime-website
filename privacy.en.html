@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try { if (localStorage.getItem('lang') === 'uk') location.replace('privacy.html'); } catch (e) {}
+    })();
+  </script>
   <title>Privacy Policy — Hajime</title>
   <meta name="description" content="Hajime does not collect, store or transmit any personal data. Everything stays on your device.">
   <meta name="theme-color" content="#F5EFE6">
@@ -26,7 +31,7 @@
     <nav>
       <a href="index.en.html">Home</a>
       <a href="support.en.html">Support</a>
-      <a href="privacy.html" class="lang-switch">УКР</a>
+      <a href="privacy.html" class="lang-switch" onclick="try{localStorage.setItem('lang','uk')}catch(e){}">УКР</a>
     </nav>
   </div>
 </header>

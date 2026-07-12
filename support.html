@@ -3,6 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem('lang');
+        if (pref === 'uk') return;
+        if (pref === 'en') { location.replace('support.en.html'); return; }
+        var langs = navigator.languages || [navigator.language || ''];
+        var isUk = langs.some(function (l) { return l.toLowerCase().indexOf('uk') === 0; });
+        if (!isUk) location.replace('support.en.html');
+      } catch (e) {}
+    })();
+  </script>
   <title>Підтримка — Hajime</title>
   <meta name="description" content="Помилка, пропозиція або питання щодо Hajime — напишіть на vira@tkachenko.kiev.ua.">
   <meta name="theme-color" content="#F5EFE6">
@@ -26,7 +38,7 @@
     <nav>
       <a href="privacy.html">Приватність</a>
       <a href="index.html">Головна</a>
-      <a href="support.en.html" class="lang-switch">EN</a>
+      <a href="support.en.html" class="lang-switch" onclick="try{localStorage.setItem('lang','en')}catch(e){}">EN</a>
     </nav>
   </div>
 </header>

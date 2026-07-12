@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try { if (localStorage.getItem('lang') === 'uk') location.replace('index.html'); } catch (e) {}
+    })();
+  </script>
   <title>Hajime — Kyokushin dictionary</title>
   <meta name="description" content="A pocket dictionary of Japanese Kyokushin karate terminology. 89 terms across 11 categories, two quiz modes, fully offline.">
   <meta property="og:title" content="Hajime — Kyokushin dictionary">
@@ -30,7 +35,7 @@
     <nav>
       <a href="privacy.en.html">Privacy</a>
       <a href="support.en.html">Support</a>
-      <a href="index.html" class="lang-switch">УКР</a>
+      <a href="index.html" class="lang-switch" onclick="try{localStorage.setItem('lang','uk')}catch(e){}">УКР</a>
     </nav>
   </div>
 </header>

@@ -3,6 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var pref = localStorage.getItem('lang');
+        if (pref === 'uk') return;
+        if (pref === 'en') { location.replace('index.en.html'); return; }
+        var langs = navigator.languages || [navigator.language || ''];
+        var isUk = langs.some(function (l) { return l.toLowerCase().indexOf('uk') === 0; });
+        if (!isUk) location.replace('index.en.html');
+      } catch (e) {}
+    })();
+  </script>
   <title>Hajime — словник Кьокушину українською</title>
   <meta name="description" content="Кишеньковий словник японської термінології Кьокушин-карате українською мовою. 89 термінів у 11 категоріях, два режими тестів, повністю офлайн.">
   <meta property="og:title" content="Hajime — словник Кьокушину українською">
@@ -30,7 +42,7 @@
     <nav>
       <a href="privacy.html">Приватність</a>
       <a href="support.html">Підтримка</a>
-      <a href="index.en.html" class="lang-switch">EN</a>
+      <a href="index.en.html" class="lang-switch" onclick="try{localStorage.setItem('lang','en')}catch(e){}">EN</a>
     </nav>
   </div>
 </header>
