@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hajimekyokushin.com/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hajimekyokushin.com/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hajimekyokushin.com/index.en.html"/>
+  </url>
+  <url>
+    <loc>https://hajimekyokushin.com/index.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hajimekyokushin.com/index.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hajimekyokushin.com/index.en.html"/>
+  </url>
+  <url>
+    <loc>https://hajimekyokushin.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hajimekyokushin.com/privacy.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hajimekyokushin.com/privacy.en.html"/>
+  </url>
+  <url>
+    <loc>https://hajimekyokushin.com/privacy.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hajimekyokushin.com/privacy.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hajimekyokushin.com/privacy.en.html"/>
+  </url>
+  <url>
+    <loc>https://hajimekyokushin.com/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hajimekyokushin.com/support.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hajimekyokushin.com/support.en.html"/>
+  </url>
+  <url>
+    <loc>https://hajimekyokushin.com/support.en.html</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hajimekyokushin.com/support.en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hajimekyokushin.com/support.en.html"/>
+  </url>
+</urlset>
