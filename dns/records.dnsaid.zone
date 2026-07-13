@@ -1,0 +1,22 @@
+; DNS for AI Discovery (DNS-AID) records for hajimekyokushin.com
+; Spec: draft-mozleywilliams-dnsop-dnsaid  +  RFC 9460 (SVCB/HTTPS)
+;
+; These are ServiceMode SVCB records (priority != 0) published under the
+; _agents underscore namespace. They advertise where AI agents can discover
+; this organization's public agent surface.
+;
+; hajimekyokushin.com is a static site that already serves agent-readable
+; Markdown via content negotiation (see ../src/worker.js). It does NOT run an
+; A2A or MCP agent server, so only the organizational *index* entrypoint is
+; published here. The TargetName points validating agents at the website over
+; HTTPS (h2/h3, port 443). Add an _a2a / _mcp record ONLY if a real endpoint
+; for that protocol exists.
+;
+; TTL 3600 (1h). TargetName has no underscores, per the draft, because public
+; x.509 certificates are used in communications with the index.
+
+_index._agents.hajimekyokushin.com. 3600 IN SVCB 1 hajimekyokushin.com. alpn="h2,h3" port=443
+
+; --- OPTIONAL, publish only if the endpoint actually exists ---
+; _a2a._agents.hajimekyokushin.com.  3600 IN SVCB 1 agent.hajimekyokushin.com. alpn="a2a" port=443
+; _mcp._agents.hajimekyokushin.com.  3600 IN SVCB 1 agent.hajimekyokushin.com. alpn="mcp" port=443
