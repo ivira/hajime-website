@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Content-Signal declares how content on this site may be used.
+# ai-train:  yes = content may be used to train AI/ML models.
+# search:    yes = content may be used to build a search index.
+# ai-input:  yes = content may be used as input to generative AI (e.g. RAG, grounding, summaries).
+# See https://contentsignals.org/ for details.
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+Sitemap: https://hajimekyokushin.com/sitemap.xml
