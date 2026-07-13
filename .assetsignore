@@ -3,7 +3,9 @@ src/
 test-results/
 package.json
 package-lock.json
+wrangler.jsonc
 .wrangler/
+.git/
 .gitignore
 .github/
 .claude/
