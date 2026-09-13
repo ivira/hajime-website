@@ -9,7 +9,7 @@
     })();
   </script>
   <title>Privacy Policy — Hajime</title>
-  <meta name="description" content="Hajime does not collect, store or transmit any personal data. Everything stays on your device.">
+  <meta name="description" content="Hajime keeps your data on your device. Recordings never leave your phone; only the text transcript is sent for analysis, and it is not stored.">
   <meta name="theme-color" content="#F5EFE6">
   <link rel="canonical" href="https://hajimekyokushin.com/privacy.en.html">
   <link rel="alternate" hreflang="uk" href="https://hajimekyokushin.com/privacy.html">
@@ -43,7 +43,7 @@
   <section class="container privacy-hero">
     <span class="eyebrow"><span class="jp">私生活</span> Privacy</span>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 9 May 2026</p>
+    <p class="updated">Last updated: 13 September 2026</p>
   </section>
 
   <div class="container privacy-content">
@@ -52,20 +52,21 @@
       <div class="privacy-num">一</div>
       <div class="privacy-body">
         <h2>In short</h2>
-        <p><strong>Hajime does not collect, store or transmit any personal data.</strong> Everything that happens in the app stays on your device.</p>
+        <p><strong>We have no accounts, no analytics, no advertising and no tracking of any kind.</strong> We never see who you are.</p>
+        <p>One feature is an exception to “everything stays on your device”, and we want to be direct about it: if you choose to analyse a training recording, <strong>the text transcript of that recording is sent to our server and on to Anthropic's Claude</strong> to produce the analysis. The audio itself never leaves your phone. Details in section 四.</p>
       </div>
     </section>
 
     <section>
       <div class="privacy-num">二</div>
       <div class="privacy-body">
-        <h2>What exactly we don't collect</h2>
+        <h2>What we never collect</h2>
         <ul>
           <li>We don't collect your name, email, phone number or any contact details.</li>
           <li>We don't use analytics, event tracking or advertising identifiers.</li>
-          <li>We don't send anything to servers — the app works fully offline.</li>
-          <li>We don't use cookies (there simply aren't any, because there's no web component).</li>
-          <li>We don't require you to create an account.</li>
+          <li>We don't use any third-party SDK for analytics, advertising or crash reporting.</li>
+          <li>We don't use cookies in the app.</li>
+          <li>We don't require you to create an account, and we have no way to identify you.</li>
         </ul>
       </div>
     </section>
@@ -73,38 +74,61 @@
     <section>
       <div class="privacy-num">三</div>
       <div class="privacy-body">
-        <h2>App data</h2>
-        <p>All dictionary terms ship with the app as local files. Quiz progress exists only within the current session — nothing is saved once you leave a quiz.</p>
-        <p>The app requests no system permissions whatsoever (camera, microphone, location, contacts, photos, notifications).</p>
+        <h2>What stays on your device</h2>
+        <p>Dictionary terms ship with the app as local files. Your profile, training log, events and quiz results are stored on your device and synced through <strong>your own iCloud account</strong> so they survive reinstalling the app or moving to a new phone. That sync is operated by Apple under Apple's privacy policy — we have no access to it and no server of our own holding it.</p>
+        <p><strong>Training recordings stay on your device.</strong> The audio files live in the app's own storage, and you can delete any recording at any time. We never upload audio anywhere.</p>
       </div>
     </section>
 
     <section>
       <div class="privacy-num">四</div>
       <div class="privacy-body">
-        <h2>Third-party services</h2>
-        <p>Hajime uses no third-party SDKs for analytics, advertising, crash reporting or any other purpose. The only “external” channel is iOS's built-in app-update mechanism through the App Store, operated by Apple under its own policy.</p>
+        <h2>Training analysis (the one thing that leaves your device)</h2>
+        <p>Analysis is optional. It happens only when you record or import audio and tap “Analyse”. When you do:</p>
+        <ol>
+          <li>Speech recognition runs <strong>entirely on your device</strong>. The first time, the app downloads a speech model; after that it works offline. Your audio is never uploaded.</li>
+          <li>The resulting <strong>text transcript</strong> — plus the chosen language and a glossary of karate terms from the app's own dictionary — is sent over an encrypted connection to our analysis server, operated by us on Cloudflare Workers.</li>
+          <li>That server forwards the transcript to <strong>Anthropic</strong> (the Claude API), receives the structured analysis, and passes it straight back to your phone.</li>
+          <li>The finished analysis is saved <strong>on your device</strong>. You can delete it at any time.</li>
+        </ol>
+        <p><strong>Our server does not store your transcript.</strong> It holds nothing in a database, keeps no copy, and passes the request through in a single step. It receives no name, email, device identifier or account — only the text itself.</p>
+        <p>Anthropic processes the transcript to generate the analysis under its own terms; see <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic's privacy policy</a>. Cloudflare operates the infrastructure our server runs on.</p>
+        <p><strong>Please be aware of what a recording contains.</strong> A training session records everyone in the room — instructors, other students and, in a children's class, children. Record only where you are allowed to, and only with the knowledge of the people present. If you do not want a transcript processed by a third party, simply don't use the analysis feature: recording and playback work without it.</p>
       </div>
     </section>
 
     <section>
       <div class="privacy-num">五</div>
       <div class="privacy-body">
-        <h2>Children</h2>
-        <p>The app is not aimed exclusively at children, but it's completely safe for any age: it collects no data and contains no ads or external links to third parties.</p>
+        <h2>Permissions the app asks for</h2>
+        <ul>
+          <li><strong>Microphone</strong> — only to record a training session, and only while you are recording.</li>
+          <li><strong>Apple Health</strong> — optional, read-only, to import your martial-arts workouts into the training log. We never write to Health and never send its data anywhere.</li>
+          <li><strong>Notifications</strong> — optional, only for quiz reminders you ask for.</li>
+        </ul>
+        <p>The app does not request camera, location, contacts or photo access. Every permission can be revoked in iOS Settings, and the app keeps working without them apart from the feature concerned.</p>
       </div>
     </section>
 
     <section>
       <div class="privacy-num">六</div>
       <div class="privacy-body">
-        <h2>Changes to this policy</h2>
-        <p>If this policy changes, the updated text will be published on this page with a new “last updated” date. We won't send any in-app notifications, since there's no channel for them.</p>
+        <h2>Children</h2>
+        <p>The app is not directed at children and collects no data that could identify anyone, of any age. It contains no ads.</p>
+        <p>Because training recordings may capture children's voices, the guidance in section 四 matters: recordings stay on the device, and a transcript is only ever sent if an adult user deliberately starts an analysis.</p>
       </div>
     </section>
 
     <section>
       <div class="privacy-num">七</div>
+      <div class="privacy-body">
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, the updated text will be published on this page with a new “last updated” date.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="privacy-num">八</div>
       <div class="privacy-body">
         <h2>Contact</h2>
         <p>Questions about privacy or the app in general — write to <a href="mailto:vira@tkachenko.kiev.ua">vira@tkachenko.kiev.ua</a>.</p>
