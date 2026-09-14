@@ -1,5 +1,14 @@
-.git
-.github
-.gitignore
+node_modules/
+src/
 .assetsignore
+test-results/
+package.json
+package-lock.json
 wrangler.jsonc
+.wrangler/
+.git/
+.gitignore
+.github/
+.claude/
+.DS_Store
+**/.DS_Store

@@ -1,8 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hajime-website",
-  "compatibility_date": "2026-05-11",
+  "compatibility_date": "2026-05-24",
+  "main": "src/worker.js",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "not_found_handling": "404-page",
+    "binding": "ASSETS",
+    "run_worker_first": true
   }
 }
